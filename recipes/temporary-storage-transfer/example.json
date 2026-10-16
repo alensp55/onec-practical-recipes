@@ -1,0 +1,16 @@
+{
+  "version": "1",
+  "fields": ["code", "caption", "amount"],
+  "rows": [
+    { "code": "A-01", "caption": "Item A", "amount": 12, "unused": "not transferred" },
+    { "code": "B-02", "caption": "Item B", "amount": 7, "unused": "not transferred" }
+  ],
+  "expected": {
+    "version": "1",
+    "count": 2,
+    "rows": [
+      { "code": "A-01", "caption": "Item A", "amount": 12 },
+      { "code": "B-02", "caption": "Item B", "amount": 7 }
+    ]
+  }
+}

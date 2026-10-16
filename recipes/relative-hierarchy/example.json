@@ -1,0 +1,16 @@
+{
+  "root": "service-a",
+  "nodes": [
+    { "key": "company", "parent": "" },
+    { "key": "branch", "parent": "company" },
+    { "key": "service-a", "parent": "branch" },
+    { "key": "team-1", "parent": "service-a" },
+    { "key": "team-2", "parent": "service-a" },
+    { "key": "other-service", "parent": "branch" }
+  ],
+  "expected": [
+    { "key": "service-a", "parent": "", "level": 0 },
+    { "key": "team-1", "parent": "service-a", "level": 1 },
+    { "key": "team-2", "parent": "service-a", "level": 1 }
+  ]
+}

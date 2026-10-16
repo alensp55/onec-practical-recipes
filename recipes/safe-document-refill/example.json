@@ -1,0 +1,15 @@
+{
+  "mode": "Перезаполнить",
+  "documentCount": 1,
+  "existing": [
+    { "key": "employee-1", "amount": 100 },
+    { "key": "employee-2", "amount": 200 }
+  ],
+  "incoming": [
+    { "key": "employee-1", "amount": 125 }
+  ],
+  "expected": [
+    { "key": "employee-2", "amount": 200 },
+    { "key": "employee-1", "amount": 125 }
+  ]
+}

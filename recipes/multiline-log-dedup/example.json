@@ -1,0 +1,13 @@
+{
+  "previous": [
+    "Import failed\nReason: file is locked",
+    "Connection timeout"
+  ],
+  "current": [
+    "Import failed\nReason: invalid column",
+    "Connection timeout"
+  ],
+  "unambiguousExpected": [
+    "Import failed\nReason: invalid column"
+  ]
+}

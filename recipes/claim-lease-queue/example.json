@@ -1,0 +1,43 @@
+{
+  "now": "2026-01-10T10:00:00",
+  "owner": "worker-a",
+  "cases": [
+    { "state": null, "expected": true },
+    {
+      "state": {
+        "status": "ВРаботе",
+        "owner": "worker-b",
+        "leaseUntil": "2026-01-10T10:05:00",
+        "version": 2
+      },
+      "expected": false
+    },
+    {
+      "state": {
+        "status": "ВРаботе",
+        "owner": "worker-b",
+        "leaseUntil": "2026-01-10T09:59:59",
+        "version": 2
+      },
+      "expected": true
+    },
+    {
+      "state": {
+        "status": "ВРаботе",
+        "owner": "worker-a",
+        "leaseUntil": "2026-01-10T10:05:00",
+        "version": 2
+      },
+      "expected": true
+    },
+    {
+      "state": {
+        "status": "Завершено",
+        "owner": "worker-a",
+        "leaseUntil": "2026-01-10T09:59:59",
+        "version": 3
+      },
+      "expected": false
+    }
+  ]
+}

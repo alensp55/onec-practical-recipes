@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "current": "new",
+      "expected": "new",
+      "next": "processing",
+      "result": { "execute": true, "code": "Выполнить" }
+    },
+    {
+      "current": "processing",
+      "expected": "new",
+      "next": "processing",
+      "result": { "execute": false, "code": "УжеВыполнено" }
+    },
+    {
+      "current": "cancelled",
+      "expected": "new",
+      "next": "processing",
+      "result": { "execute": false, "code": "Конфликт" }
+    }
+  ]
+}

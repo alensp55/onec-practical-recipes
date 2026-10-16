@@ -1,0 +1,5 @@
+{
+  "values": ["a", "b", "c", "d", "e"],
+  "batchSize": 2,
+  "expected": [["a", "b"], ["c", "d"], ["e"]]
+}
